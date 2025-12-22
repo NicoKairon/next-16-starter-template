@@ -1,0 +1,4 @@
+{
+  "title": "Example payload loaded with fetch",
+  "description": "This JSON lives in /public and is fetched through TanStack Query to demonstrate client data fetching."
+}
