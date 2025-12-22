@@ -1,6 +1,16 @@
 # Next Template
 
-Reusable Next.js 16 App Router starter with React 19, TypeScript, Tailwind, shadcn/ui, and modern data + form tooling.
+Reusable Next.js 16 App Router starter with React 19, TypeScript, Tailwind CSS v4, shadcn/ui, and modern data + form tooling.
+
+This repository is intended to be used as a **one-time project scaffold**, not as a dependency, fork, or upstream you sync from.
+
+## Getting started
+
+To create a new project using this template:
+
+````bash
+pnpm create next-app my-app \
+  --example https://github.com/NicoKairon/next-16-starter-template.git
 
 ## Commands
 
@@ -12,7 +22,7 @@ pnpm lint
 pnpm test
 pnpm test:unit
 pnpm test:e2e
-```
+````
 
 Turbopack is enabled for dev and build by default.
 
