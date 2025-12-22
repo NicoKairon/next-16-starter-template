@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@hookform/resolvers':
-    specifier: ^3.10.0
-    version: 3.10.0(react-hook-form@7.69.0)
+    specifier: ^5.2.2
+    version: 5.2.2(react-hook-form@7.69.0)
   '@tanstack/react-query':
     specifier: ^5.59.16
     version: 5.90.12(react@19.2.3)
@@ -24,8 +24,8 @@ dependencies:
     specifier: ^2.1.1
     version: 2.1.1
   lucide-react:
-    specifier: ^0.460.0
-    version: 0.460.0(react@19.2.3)
+    specifier: ^0.562.0
+    version: 0.562.0(react@19.2.3)
   next:
     specifier: 16.1.0
     version: 16.1.0(@babel/core@7.28.5)(@playwright/test@1.57.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.3)(react@19.2.3)
@@ -48,11 +48,11 @@ dependencies:
     specifier: ^0.0.1
     version: 0.0.1
   tailwind-merge:
-    specifier: ^2.5.4
-    version: 2.6.0
+    specifier: ^3.4.0
+    version: 3.4.0
   zod:
-    specifier: ^3.24.1
-    version: 3.25.76
+    specifier: ^4.2.1
+    version: 4.2.1
   zustand:
     specifier: ^5.0.2
     version: 5.0.9(@types/react@19.2.7)(react@19.2.3)
@@ -696,11 +696,12 @@ packages:
     resolution: {integrity: sha512-aGTxbpbg8/b5JfU1HXSrbH3wXZuLPJcNEcZQFMxLs3oSzgtVu6nFPkbbGGUvBcUjKV2YyB9Wxxabo+HEH9tcRQ==}
     dev: false
 
-  /@hookform/resolvers@3.10.0(react-hook-form@7.69.0):
-    resolution: {integrity: sha512-79Dv+3mDF7i+2ajj7SkypSKHhl1cbln1OGavqrsF7p6mbUv11xpqpacPsGDCTRvCSjEEIez2ef1NveSVL3b0Ag==}
+  /@hookform/resolvers@5.2.2(react-hook-form@7.69.0):
+    resolution: {integrity: sha512-A/IxlMLShx3KjV/HeTcTfaMxdwy690+L/ZADoeaTltLx+CVuzkeVIPuybK3jrRfw7YZnmdKsVVHAlEPIAEUNlA==}
     peerDependencies:
-      react-hook-form: ^7.0.0
+      react-hook-form: ^7.55.0
     dependencies:
+      '@standard-schema/utils': 0.3.0
       react-hook-form: 7.69.0(react@19.2.3)
     dev: false
 
@@ -1299,6 +1300,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@standard-schema/utils@0.3.0:
+    resolution: {integrity: sha512-e7Mew686owMaPJVNNLs55PUvgz371nKgwsc4vxE49zsODpJEnxgxRo2y/OKrqueavXgZNMDVj3DdHFlaSAeU8g==}
+    dev: false
 
   /@swc/helpers@0.5.15:
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
@@ -2439,8 +2444,8 @@ packages:
       '@babel/parser': 7.28.5
       eslint: 9.39.2
       hermes-parser: 0.25.1
-      zod: 3.25.76
-      zod-validation-error: 4.0.2(zod@3.25.76)
+      zod: 4.2.1
+      zod-validation-error: 4.0.2(zod@4.2.1)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3401,10 +3406,10 @@ packages:
     dependencies:
       yallist: 3.1.1
 
-  /lucide-react@0.460.0(react@19.2.3):
-    resolution: {integrity: sha512-BVtq/DykVeIvRTJvRAgCsOwaGL8Un3Bxh8MbDxMhEWlZay3T4IpEKDEpwt5KZ0KJMHzgm6jrltxlT5eXOWXDHg==}
+  /lucide-react@0.562.0(react@19.2.3):
+    resolution: {integrity: sha512-82hOAu7y0dbVuFfmO4bYF1XEwYk/mEbM5E+b1jgci/udUBEE/R7LF5Ip0CCEmXe8AybRM8L+04eP+LGZeDvkiw==}
     peerDependencies:
-      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
     dependencies:
       react: 19.2.3
     dev: false
@@ -4289,8 +4294,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  /tailwind-merge@2.6.0:
-    resolution: {integrity: sha512-P+Vu1qXfzediirmHOC3xKGAYeZtPcV9g76X+xg2FD4tYgR71ewMA35Y3sCz3zhiN/dwefRpJX0yBcgwi1fXNQA==}
+  /tailwind-merge@3.4.0:
+    resolution: {integrity: sha512-uSaO4gnW+b3Y2aWoWfFpX62vn2sR3skfhbjsEnaBI81WD1wBLlHZe5sWf0AqjksNdYTbGBEd0UasQMT3SNV15g==}
     dev: false
 
   /tailwindcss@4.1.18:
@@ -4734,17 +4739,17 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /zod-validation-error@4.0.2(zod@3.25.76):
+  /zod-validation-error@4.0.2(zod@4.2.1):
     resolution: {integrity: sha512-Q6/nZLe6jxuU80qb/4uJ4t5v2VEZ44lzQjPDhYJNztRQ4wyWc6VF3D3Kb/fAuPetZQnhS3hnajCf9CsWesghLQ==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       zod: ^3.25.0 || ^4.0.0
     dependencies:
-      zod: 3.25.76
+      zod: 4.2.1
     dev: true
 
-  /zod@3.25.76:
-    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
+  /zod@4.2.1:
+    resolution: {integrity: sha512-0wZ1IRqGGhMP76gLqz8EyfBXKk0J2qo2+H3fi4mcUP/KtTocoX08nmIAHl1Z2kJIZbZee8KOpBCSNPRgauucjw==}
 
   /zustand@5.0.9(@types/react@19.2.7)(react@19.2.3):
     resolution: {integrity: sha512-ALBtUj0AfjJt3uNRQoL1tL2tMvj6Gp/6e39dnfT6uzpelGru8v1tPOGBzayOWbPJvujM8JojDk3E1LxeFisBNg==}
