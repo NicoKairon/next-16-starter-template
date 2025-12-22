@@ -10,7 +10,7 @@ To create a new project using this template:
 
 ````bash
 pnpm create next-app my-app \
-  --example https://github.com/NicoKairon/next-16-starter-template.git
+  --example https://github.com/NicoKairon/next-16-starter-template
 
 ## Commands
 
