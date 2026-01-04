@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import type { ReactNode } from 'react';
 
 const PUBLIC_LAYOUT_CLASSES =
@@ -11,7 +10,7 @@ type PublicLayoutProps = {
 const PublicLayout = ({ children }: PublicLayoutProps) => {
   return (
     <div className={PUBLIC_LAYOUT_CLASSES}>
-      <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6">
+      {/* <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6">
         <span className="text-sm font-semibold uppercase tracking-[0.2em]">Next Template</span>
         <nav className="flex items-center gap-4 text-sm text-slate-600">
           <Link className="transition hover:text-slate-900" href="/dashboard">
@@ -26,7 +25,7 @@ const PublicLayout = ({ children }: PublicLayoutProps) => {
             Docs
           </a>
         </nav>
-      </header>
+      </header> */}
       {children}
     </div>
   );

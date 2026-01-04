@@ -47,7 +47,7 @@ const ChatBotWidget = (): React.JSX.Element => {
   }, [messages]);
 
   // METHODS
-  const handleSend = async (formValues: ChatFormValues) => {
+  const handleSubmitMessage = async (formValues: ChatFormValues) => {
     const trimmed = formValues.message.trim();
     if (!trimmed || isPending) return;
 
@@ -81,14 +81,14 @@ const ChatBotWidget = (): React.JSX.Element => {
   };
 
   return (
-    <div className="fixed inset-x-3 bottom-3 z-40 w-auto sm:inset-auto sm:bottom-6 sm:right-6 sm:w-full sm:max-w-md">
+    <div className="fixed left-0 bottom-3 mx-4 z-40 w-auto sm:left-6 sm:bottom-6 sm:w-full sm:max-w-sm">
       {isOpen ? (
         <div className="flex h-[70vh] flex-col overflow-hidden rounded-3xl border border-slate-200/70 bg-white/95 shadow-2xl shadow-slate-900/10 backdrop-blur sm:h-auto">
           <ChatHeader onClose={() => setIsOpen(false)} />
           <div ref={scrollRef} className="min-h-0 flex-1 overflow-y-auto sm:flex-none">
             <ChatHistory items={messages} />
           </div>
-          <ChatComposer onSubmit={handleSend} methods={methods} />
+          <ChatComposer onSubmit={handleSubmitMessage} methods={methods} />
         </div>
       ) : (
         <button

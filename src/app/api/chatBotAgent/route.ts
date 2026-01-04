@@ -3,7 +3,7 @@ This file is the API route for the chat bot agent.
 Import the custom content from the data folder see exampleDataContent.ts for an example.
 Then construct the system prompt acoordingly.
 It uses the Google Gemini API to generate the response.
-The API key should bestored in the environment variables.
+The API key should be stored in the environment variables.
 */
 
 import { generateText } from 'ai';
