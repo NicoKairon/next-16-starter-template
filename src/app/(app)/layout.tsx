@@ -1,20 +1,17 @@
-import Link from "next/link";
-import type { ReactNode } from "react";
+import Link from 'next/link';
+import type { ReactNode } from 'react';
 
-const APP_LAYOUT_CLASSES =
-  "min-h-screen bg-slate-950 text-slate-50";
+const APP_LAYOUT_CLASSES = 'min-h-screen bg-slate-950 text-slate-50';
 
 type AppLayoutProps = {
   children: ReactNode;
 };
 
-export default function AppLayout({ children }: AppLayoutProps) {
+const AppLayout = ({ children }: AppLayoutProps) => {
   return (
     <div className={APP_LAYOUT_CLASSES}>
       <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6">
-        <span className="text-sm font-semibold uppercase tracking-[0.2em]">
-          App Workspace
-        </span>
+        <span className="text-sm font-semibold uppercase tracking-[0.2em]">App Workspace</span>
         <nav className="text-sm text-slate-400">
           <Link className="transition hover:text-slate-200" href="/">
             Back to public site
@@ -24,4 +21,6 @@ export default function AppLayout({ children }: AppLayoutProps) {
       {children}
     </div>
   );
-}
+};
+
+export default AppLayout;
